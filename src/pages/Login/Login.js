@@ -1,6 +1,12 @@
-import "./Login.css";
+import { useNavigate } from 'react-router-dom';
+import './Login.scss';
 
 const Login = () => {
+  const navigate = useNavigate();
+  const clickBtn = () => {
+    navigate('/main');
+  };
+
   return (
     <div className="login">
       <div className="loginContainer">
@@ -21,7 +27,9 @@ const Login = () => {
             placeholder="비밀번호를 입력하세요"
           />
         </div>
-        <button className="loginBtn">로그인</button>
+        <button className="loginBtn" onClick={clickBtn}>
+          로그인
+        </button>
       </div>
     </div>
   );

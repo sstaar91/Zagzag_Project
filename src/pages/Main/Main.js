@@ -1,10 +1,10 @@
 import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Main.css';
+import './Main.scss';
 
 const Main = () => {
   return (
-    <nav>
+    <nav className="main">
       <div className="header">
         <span className="logo">Zagzag</span>
         <div className="iconWrap">
